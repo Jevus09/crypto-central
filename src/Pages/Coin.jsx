@@ -14,7 +14,7 @@ const Coin = () => {
 
   const params = useParams()
   const [coin, setCoin] = useState({})
-  const { user, watchlist, setAlert } = CryptoState()
+  const { user, watchlist, setAlerts } = CryptoState()
 
   const url = `https://api.coingecko.com/api/v3/coins/${params.coinID}`
 
@@ -38,7 +38,7 @@ const Coin = () => {
 
     try {
       await setDoc(coinRef, {coins:watchlist?[...watchlist, coin?.id] : [coin?.id]})
-      setAlert({
+      setAlerts({
         open: true,
         message: `${coin.name} Added to the Watchlist!`,
         type: 'success'
@@ -46,7 +46,7 @@ const Coin = () => {
 
 
     }catch(error) {
-      setAlert({
+      setAlerts({
         open: true,
         message: error.message,
         type: 'error'
@@ -62,7 +62,7 @@ const Coin = () => {
         coins: watchlist.filter((watch) => watch !== coin?.id)
       }, {merge: 'true'}
       )
-      setAlert({
+      setAlerts({
         open: true,
         message: `${coin.name} Removed from Watchlist!`,
         type: 'success'
@@ -70,7 +70,7 @@ const Coin = () => {
 
 
     }catch(error) {
-      setAlert({
+      setAlerts({
         open: true,
         message: error.message,
         type: 'error'

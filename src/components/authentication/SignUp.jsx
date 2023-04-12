@@ -8,14 +8,14 @@ function SignUp({handleClose}) {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [confirmpassword, setConfirmPassword] = useState('')
-    const {setAlert} = CryptoState()
+    const {setAlerts} = CryptoState()
 
     
 
 
     const handleSubmit = async () =>{
         if (password !== confirmpassword) {
-            setAlert ({
+            setAlerts ({
                 open: true,
                 message: 'Passwords do not match',
                 type: 'error'
@@ -25,14 +25,14 @@ function SignUp({handleClose}) {
         try {
             const result = await createUserWithEmailAndPassword(auth, email, password)
 
-            setAlert({
+            setAlerts({
                 open: true,
                 message: `Sign Up Successful. Welcome ${result.user.email}`,
                 type: 'success'
             })
             handleClose()
         } catch(error){
-            setAlert({
+            setAlerts({
                 open: true,
                 message: error.message,
                 type: 'error'

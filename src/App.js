@@ -7,7 +7,7 @@ import Coins from './components/coins/Coins';
 import Navbar from './components/navbar/Navbar';
 import Trending from './components/trending/Trending'
 import Footer from './components/footer/Footer';
-import Alert from './components/authentication/Alerts';
+import Alerts from './components/authentication/Alerts';
 
 
 
@@ -49,7 +49,7 @@ useEffect(() => {
           <Route path=':coinID' element={<Coin/>} />
         </Route>
       </Routes>
-      <Alert/>
+      <Alerts/>
       <Footer/>
     </div>
   );

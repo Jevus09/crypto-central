@@ -22,7 +22,7 @@ export default function AuthModal() {
 
 
 
-  const {setAlert} = CryptoState()
+  const {setAlerts} = CryptoState()
   const googleProvider = new GoogleAuthProvider()
 
   const [open, setOpen] = React.useState(false);
@@ -34,14 +34,14 @@ export default function AuthModal() {
 
   const signInWithGoogle = () => {
     signInWithPopup(auth, googleProvider).then(res => {
-      setAlert({
+      setAlerts({
         open: true,
         message: `Sign up Successfull. Welcome ${res.user.email}`,
         type: 'success'
       })
       handleClose()
     }).catch(error => {
-      setAlert({
+      setAlerts({
         open: true,
         message: error.message,
         type: 'error'

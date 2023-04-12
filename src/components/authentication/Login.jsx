@@ -8,11 +8,11 @@ function Login({handleClose}) {
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
-    const {setAlert} = CryptoState()
+    const {setAlerts} = CryptoState()
 
     const handleSubmit = async () =>{
         if (!email || !password) {
-            setAlert({
+            setAlerts({
                 open:true,
                 message: 'Please fill all the Fields',
                 type: 'error'
@@ -21,7 +21,7 @@ function Login({handleClose}) {
         }
         try {
             const result = await signInWithEmailAndPassword(auth, email, password)
-            setAlert({
+            setAlerts({
                 open: true,
                 message: `Log in Successful. Welcome ${result.user.email}`,
                 type: 'success'
@@ -30,7 +30,7 @@ function Login({handleClose}) {
 
             
         } catch (error) {
-            setAlert({
+            setAlerts({
                 open: true,
                 message: error.message,
                 type: 'error'

@@ -10,7 +10,7 @@ import { doc, setDoc } from 'firebase/firestore';
 
 
 export default function UserSidebar() {
-    const { user, setAlert, watchlist, coins } = CryptoState()
+    const { user, setAlerts, watchlist, coins } = CryptoState()
     const [state, setState] = React.useState({
         right: false,
     });
@@ -25,7 +25,7 @@ export default function UserSidebar() {
 
     const logOut = () => {
         signOut(auth)
-        setAlert({
+        setAlerts({
             open: true,
             type: 'success',
             message: 'Logout Successfull'
@@ -44,7 +44,7 @@ export default function UserSidebar() {
             coins: watchlist.filter((watch) => watch !== coin?.id)
           }, {merge: 'true'}
           )
-          setAlert({
+          setAlerts({
             open: true,
             message: `${coin.name} Removed from Watchlist!`,
             type: 'success'
@@ -52,7 +52,7 @@ export default function UserSidebar() {
     
     
         }catch(error) {
-          setAlert({
+          setAlerts({
             open: true,
             message: error.message,
             type: 'error'
