@@ -27,6 +27,7 @@ const Coin = () => {
     }).catch((error) => {
       console.log(error)
     })
+    // eslint-disable-next-line
   }, [])
 
 
@@ -95,10 +96,9 @@ const Coin = () => {
             style={{
               width: '100%',
               height: 40,
-              color: 'black',
+              color: inWatchlist? 'white': 'black',
               fontWeight: '500',
               backgroundColor: inWatchlist? '#ff0000' : '#DAA400',
-              boxShadow: ' ',
             }}
             onClick={ inWatchlist? removeFromWatchlist : addToWatchlist}
 
