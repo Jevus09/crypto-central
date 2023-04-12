@@ -1,4 +1,5 @@
 import React from 'react';
+import './AuthModal.css'
 import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
 import { AppBar, Backdrop, Box, Fade, Tab, Tabs, } from '@mui/material';
@@ -8,13 +9,6 @@ import GoogleButton from 'react-google-button'
 import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 import { auth } from '../firebase/firebase';
 import { CryptoState } from '../context/CryptoContext';
-import './AuthModal.css'
-
-
-  
-
-
-
 
 
 
@@ -57,7 +51,6 @@ export default function AuthModal() {
       <Button variant='contained'
         style={{
           display: 'flex',
-          marginRight: 190,
           width: 85,
           color: 'black',
           height: 40,
@@ -78,17 +71,17 @@ export default function AuthModal() {
 
         <Fade in={open} >
           <div className='paper'
-            style={{
-              width: 400,
-              borderRadius: 10,
-              backgroundColor: '#26272b',
-              position: 'absolute',
-              top: '50%',
-              left: '50%',
-              transform: 'translate(-50%, -50%)',
-              border: '2px solid #000',
-          
-            }}
+              style={{
+                width: '15vw',
+                minWidth: 350,
+                borderRadius: 10,
+                backgroundColor: '#26272b',
+                position: 'absolute',
+                top: '50%',
+                left: '50%',
+                transform: 'translate(-50%, -50%)',
+                border: '2px solid #000',
+              }}
 
           >
             <AppBar

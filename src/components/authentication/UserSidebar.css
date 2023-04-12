@@ -10,6 +10,7 @@
     width: 350px;
     padding: 25px;
     height: 100%;
+    min-height: 850px;
     display: flex;
     flex-direction: column;
     font-family: monospace;
@@ -25,17 +26,17 @@
 }
 
 .watchlist{
-    
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    width: 12vw;
+    height: 58vh;
+    min-width: 300px;
     background-color: grey;
     color: white;
     border-radius: 10px;
-    padding: 2vh 2.5vw; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 12px;
-    overflow: hidden
+    overflow-y: scroll ;
     
 }
 
@@ -60,4 +61,10 @@
     background-color: #EEBC1D;
     box-shadow: 0 0 3px black;
 }
+
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
 

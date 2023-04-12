@@ -15,22 +15,22 @@
 
 .container-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    margin-left: 2rem;
-    }
-
+}
 
 
 @media screen and (max-width: 720px) {
 
     .container-nav {
         display: flex;
-        gap: 20vw;
+ 
         font-size: 1vh;
     
     
     }
+
+
+
+
 }
-
-

@@ -75,8 +75,7 @@ export default function UserSidebar() {
                             height: 60,
                             width: 60,
                             display: 'flex',
-                            marginTop: 25,
-                            marginRight: 190,
+                            marginTop: 10,
                             cursor: 'pointer',
                             backgroundColor: '#EEBC1D'
                         }}
@@ -106,6 +105,7 @@ export default function UserSidebar() {
                                     <span
                                         style={{
                                             fontSize: 30,
+                                            marginTop: 15,
                                             marginBottom: 20,
                                             textShadow: '0 0 5px black',
                                         }}
