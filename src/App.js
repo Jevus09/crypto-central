@@ -8,7 +8,7 @@ import Navbar from './components/navbar/Navbar';
 import Trending from './components/trending/Trending'
 import Footer from './components/footer/Footer';
 import Alert from './components/authentication/Alerts';
-import Graph from './components/graph/Graph';
+
 
 
 

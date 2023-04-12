@@ -1,9 +1,9 @@
+ /* eslint-disable */
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
 import { CircularProgress } from '@mui/material'
 import { Line } from 'react-chartjs-2'
-// eslint-disable-next-line
 import { Chart } from 'chart.js/auto'
 import SelectButton from './SelectButton'
 
@@ -11,6 +11,7 @@ const Graph = () => {
 
 
   const params = useParams()
+
 
   const [historicalData, setHistoricalData] = useState(null)
 
@@ -31,7 +32,6 @@ const Graph = () => {
 
   useEffect(() => {
     fetchHistoricalData()
-    // eslint-disable-next-line
   }, [days])
 
  
