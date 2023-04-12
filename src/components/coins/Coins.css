@@ -1,0 +1,46 @@
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #26272b;
+    box-shadow: 0px 0px 12px #18191b;
+    border-radius: 8px;
+    margin: 2rem 1rem;
+    padding: .7rem 1rem;
+    font-weight: 700;
+}
+
+.css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root {
+    color: aliceblue !important;
+}
+
+
+.css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root:hover{
+    color: #6900ff !important;
+}
+
+.css-1v2lvtn-MuiPaginationItem-root {
+    color: aliceblue !important;
+}
+
+.coin-name {
+    margin-left: -4rem;
+}
+
+.MuiOutlinedInput-notchedOutline  {
+    color: white !important;
+}
+
+
+@media screen and (max-width: 720px) {
+
+    .hide-mobile {
+        display: none;
+    }
+    
+}

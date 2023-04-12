@@ -1,0 +1,36 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    font-size: 2rem;
+    color: #DAA400;
+}
+
+.purple {
+    color: #DAA400;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2rem;
+    }
+
+
+
+@media screen and (max-width: 720px) {
+
+    .container-nav {
+        display: flex;
+        gap: 20vw;
+        font-size: 1vh;
+    
+    
+    }
+}
+
+

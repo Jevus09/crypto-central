@@ -1,0 +1,30 @@
+.coitainer-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 15vh;
+}
+
+
+.carousel-item p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-item img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    margin: 1rem auto;
+}
+
+
+@media screen and (max-width: 960px ){
+    .coitainer-slider {
+        height: 6vh;
+    }
+
+}

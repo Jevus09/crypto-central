@@ -1,0 +1,20 @@
+.selectbutton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #DAA400;
+        border-radius: 5px;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-family: 'Montserrat';
+        cursor: pointer;
+        width: 22%;
+        margin: 5px;
+}
+
+.selectbutton:hover {
+        background-color: #DAA400;
+        color: black
+
+}

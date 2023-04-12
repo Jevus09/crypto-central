@@ -1,0 +1,63 @@
+.photo{
+    width: 200px !important;
+    height: 200px !important;
+    cursor: pointer;
+    background-color: #EEBC1D;
+    object-fit: contain
+}
+
+.container-sidebar {
+    width: 350px;
+    padding: 25px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+    background-color: #26272b
+}
+
+.profile {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.watchlist{
+    
+    flex: 1;
+    background-color: grey;
+    color: white;
+    border-radius: 10px;
+    padding: 2vh 2.5vw; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    overflow: hidden
+    
+}
+
+.name{
+    width: 100%;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    word-wrap: break-word;
+}
+
+.coin {
+    padding: 15px;
+    border-radius: 5px;
+    color: black;
+    width: 150%;
+    max-width: 260px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EEBC1D;
+    box-shadow: 0 0 3px black;
+}
+
